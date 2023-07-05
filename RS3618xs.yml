@@ -31,7 +31,7 @@ dt: false
 disks: 12
 beta: false
 productvers:
-  "7.1.1":
+  "7.1":
     kver: "4.4.180"
     rd-compressed: false
     cmdline:
