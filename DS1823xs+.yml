@@ -25,10 +25,16 @@ serial:
     - "2280"
   middle: "V5R"
   suffix: "alpha"
+arc:
+  serial: "2280V5RNPRMP8"
+  mac1: "9009D027C3C2"
+  mac2: "9009D027C3C3"
+  mac3: "9009D027C3C4"
+  mac4: "9009D027C3C5"
 dom: 2
 dt: true
 disks: 8
-beta: true
+beta: false
 productvers:
   "7.1":
     kver: "4.4.180"
