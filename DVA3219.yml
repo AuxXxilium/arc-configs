@@ -27,11 +27,11 @@ serial:
   middle: "RFR"
   suffix: "alpha"
 arc:
-  serial: "1930RFR8HJTK4"
-  mac1: "001132A9E866"
-  mac2: "001132A9E867"
-  mac3: "001132A9E868"
-  mac4: "001132A9E869"
+  serial: "1930RFRJFCXCR"
+  mac1: "001132A9EA9A"
+  mac2: "001132A9EA9B"
+  mac3: "001132A9EA9C"
+  mac4: "001132A9EA9D"
 dom: 2
 disks: 4
 dt: false
