@@ -3,17 +3,17 @@ name: Build Configs
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'format %y.%-m.$i or auto'
-        required: false
-        type: string
+      prerelease:
+        description: 'pre release'
+        default: false
+        type: boolean
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@main
+        uses: actions/checkout@v3
 
       - name: Init Env
         run: |
@@ -23,31 +23,31 @@ jobs:
 
       - name: Calculate version
         run: |
-          # Calculate version
+          # Calculate Version
           VERSION=""
-          if [ ${{ github.event_name }} == 'release' -a ${{ github.ref_type }} == 'tag' ]; then
-            VERSION="${{ github.ref_name }}"
-          elif [ -n "${{ inputs.version }}" ]; then
-            if [ "$(echo ${{ inputs.version }} | cut -d '.' -f 1,2)" = "$(date +'%y.%-m')" ]; then
-              VERSION="${{ inputs.version }}"
-            else
-              LATEST_TAG="$(curl -skL "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r ".tag_name" 2>/dev/null)"
-              if [ -n "${LATEST_TAG}" -a "$(echo ${LATEST_TAG} | cut -d '.' -f 1,2)" = "$(date +'%y.%-m')" ]; then  # format %y.%-m.$i
-                VERSION="$(echo ${LATEST_TAG} | awk -F '.' '{$3=$3+1}1' OFS='.')"
-              else
-                VERSION="$(date +'%y.%-m').0"
-              fi
-            fi
+          LATEST_TAG="$(curl -skL "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r ".tag_name" 2>/dev/null)"
+          if [ -n "${LATEST_TAG}" -a "$(echo ${LATEST_TAG} | cut -d '.' -f 1,2)" = "$(date +'%y.%-m')" ]; then  # format %y.%-m.$i
+            VERSION="$(echo ${LATEST_TAG} | awk -F '.' '{$3=$3+1}1' OFS='.')"
           else
-            VERSION=""
+            VERSION="$(date +'%y.%-m').0"
+          fi
+
+          CHANGELOG=$(git log --pretty=format:"%s" ${LATEST_TAG}..HEAD | sort)
+          if [ -n "${CHANGELOG}" ]; then
+            echo "Changelog: ${CHANGELOG}"
+            echo "${CHANGELOG}" >changelog.txt
+          else
+            CHANGELOG='New Build Tree'
+            echo "Changelog: ${CHANGELOG}"
+            echo "${CHANGELOG}" >changelog.txt
           fi
 
           echo "VERSION: ${VERSION}"
           echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          echo "${VERSION}" >VERSION
 
       - name: Build configs packages
         run: |
-          echo "${{ env.VERSION }}" >"VERSION"
           zip -9 configs.zip -j *.yml VERSION
 
       - name: Upload to Artifacts
@@ -62,4 +62,7 @@ jobs:
         if: env.VERSION != ''
         with:
           tag_name: ${{ env.VERSION }}
-          files: configs.zip
+          prerelease: ${{ inputs.prerelease }}
+          files: |
+            configs.zip
+            changelog.txt
