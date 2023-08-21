@@ -42,9 +42,18 @@ jobs:
             echo "${CHANGELOG}" >changelog.txt
           fi
 
-          echo "VERSION: ${VERSION}"
-          echo "VERSION=${VERSION}" >> $GITHUB_ENV
-          echo "${VERSION}" >VERSION
+          if [ -n "${VERSION}" ]; then
+            # Modify Source File
+            echo "${VERSION}" >VERSION
+
+            git pull
+            status=$(git status -s | awk '{printf " %s", $2}')
+            if [ -n "${status}" ]; then
+              git add ${status}
+              git commit -m "build: ${VERSION}"
+              git push -f
+            fi
+          fi
 
       - name: Build configs packages
         run: |
