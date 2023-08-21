@@ -44,7 +44,9 @@ jobs:
 
           if [ -n "${VERSION}" ]; then
             # Modify Source File
+            echo "Version: ${VERSION}"
             echo "${VERSION}" >VERSION
+            echo "VERSION=${VERSION}" >> $GITHUB_ENV
 
             git pull
             status=$(git status -s | awk '{printf " %s", $2}')
