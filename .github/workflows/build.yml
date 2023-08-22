@@ -32,29 +32,11 @@ jobs:
             VERSION="$(date +'%y.%-m').0"
           fi
 
-          CHANGELOG=$(git log --pretty=format:"%s" ${LATEST_TAG}..HEAD | sort)
-          if [ -n "${CHANGELOG}" ]; then
-            echo "Changelog: ${CHANGELOG}"
-            echo "${CHANGELOG}" >changelog.txt
-          else
-            CHANGELOG='New Build Tree'
-            echo "Changelog: ${CHANGELOG}"
-            echo "${CHANGELOG}" >changelog.txt
-          fi
-
           if [ -n "${VERSION}" ]; then
             # Modify Source File
             echo "Version: ${VERSION}"
             echo "${VERSION}" >VERSION
             echo "VERSION=${VERSION}" >> $GITHUB_ENV
-
-            git pull
-            status=$(git status -s | awk '{printf " %s", $2}')
-            if [ -n "${status}" ]; then
-              git add ${status}
-              git commit -m "build: ${VERSION}"
-              git push -f
-            fi
           fi
 
       - name: Build configs packages
@@ -76,4 +58,3 @@ jobs:
           prerelease: ${{ inputs.prerelease }}
           files: |
             configs.zip
-            changelog.txt
