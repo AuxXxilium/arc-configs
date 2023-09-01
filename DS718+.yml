@@ -20,11 +20,11 @@ platform: "apollolake"
 unique: "synology_apollolake_718+"
 serial:
   prefix:
-  - "1930"
+    - "1930"
   middle: "PEN"
   suffix: "numeric"
 flags:
-- "movbe"
+  - "movbe"
 dom: 2
 dt: false
 disks: 4
@@ -38,11 +38,11 @@ productvers:
     synoinfo:
       <<: *synoinfo
     patch:
-    - "ramdisk-common-disable-root-pwd.patch"
-    - "ramdisk-common-init-script.patch"
-    - "ramdisk-common-etc-rc.patch"
-    - "ramdisk-42951-post-init-script.patch"
-    - "ramdisk-42661-disable-disabled-ports.patch"
+      - "ramdisk-common-disable-root-pwd.patch"
+      - "ramdisk-common-init-script.patch"
+      - "ramdisk-common-etc-rc.patch"
+      - "ramdisk-42951-post-init-script.patch"
+      - "ramdisk-42661-disable-disabled-ports.patch"
 
   "7.2":
     kver: "4.4.302"
@@ -52,8 +52,8 @@ productvers:
     synoinfo:
       <<: *synoinfo
     patch:
-    - "ramdisk-64216-disable-root-pwd.patch"
-    - "ramdisk-64216-init-script.patch"
-    - "ramdisk-common-etc-rc.patch"
-    - "ramdisk-42951-post-init-script.patch"
-    - "ramdisk-42661-disable-disabled-ports.patch"
+      - "ramdisk-64216-disable-root-pwd.patch"
+      - "ramdisk-64216-init-script.patch"
+      - "ramdisk-common-etc-rc.patch"
+      - "ramdisk-42951-post-init-script.patch"
+      - "ramdisk-42661-disable-disabled-ports.patch"
