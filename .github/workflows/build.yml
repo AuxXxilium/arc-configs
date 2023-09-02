@@ -17,7 +17,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Changelog
+        uses: Bullrich/generate-release-changelog@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
 
       - name: Init Env
         run: |
@@ -64,5 +72,7 @@ jobs:
         with:
           tag_name: ${{ env.VERSION }}
           prerelease: ${{ inputs.prerelease }}
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
           files: |
             configs.zip
