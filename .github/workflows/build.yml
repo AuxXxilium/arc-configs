@@ -4,11 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'format %y.%-m.$i or auto'
+        description: "format %y.%-m.$i or auto"
         required: false
         type: string
       prerelease:
-        description: 'pre release'
+        description: "pre release"
         default: false
         type: boolean
 
@@ -55,7 +55,7 @@ jobs:
             echo "VERSION=${VERSION}" >> $GITHUB_ENV
           fi
 
-      - name: Build configs packages
+      - name: Build Configs Package
         run: |
           zip -9 configs.zip -j *.yml VERSION
 
