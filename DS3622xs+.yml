@@ -15,6 +15,12 @@ cmdline: &cmdline
   syno_hdd_powerup_seq: 0
   vender_format_version: 2
   elevator: elevator
+patch: &patch
+  - "ramdisk-etc-rc-*.patch"
+  - "ramdisk-init-script-v4-*.patch"
+  - "ramdisk-post-init-script-*.patch"
+  - "ramdisk-disable-root-pwd-*.patch"
+  - "ramdisk-disable-disabled-ports-*.patch"
 platform: "broadwellnk"
 unique: "synology_broadwellnk_3622xs+"
 serial:
@@ -34,6 +40,15 @@ disks: 12
 dt: false
 beta: false
 productvers:
+  "7.0":
+    kver: "4.4.180"
+    rd-compressed: false
+    cmdline:
+      <<: *cmdline
+    synoinfo:
+      <<: *synoinfo
+    patch: *patch
+
   "7.1":
     kver: "4.4.180"
     rd-compressed: false
@@ -41,12 +56,7 @@ productvers:
       <<: *cmdline
     synoinfo:
       <<: *synoinfo
-    patch:
-      - "ramdisk-common-disable-root-pwd.patch"
-      - "ramdisk-common-init-script.patch"
-      - "ramdisk-common-etc-rc.patch"
-      - "ramdisk-42951-post-init-script.patch"
-      - "ramdisk-42661-disable-disabled-ports.patch"
+    patch: *patch
 
   "7.2":
     kver: "4.4.302"
@@ -55,9 +65,4 @@ productvers:
       <<: *cmdline
     synoinfo:
       <<: *synoinfo
-    patch:
-      - "ramdisk-64216-disable-root-pwd.patch"
-      - "ramdisk-64216-init-script.patch"
-      - "ramdisk-common-etc-rc.patch"
-      - "ramdisk-42951-post-init-script.patch"
-      - "ramdisk-42661-disable-disabled-ports.patch"
+    patch: *patch
