@@ -26,7 +26,7 @@ platform: "v1000"
 unique: "synology_v1000_1821+"
 serial:
   prefix:
-    - "2110"
+    - "2120"
   middle: "SKR"
   suffix: "alpha"
 dom: 2
