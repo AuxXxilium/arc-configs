@@ -25,8 +25,14 @@ unique: "synology_denverton_2419+"
 serial:
   prefix:
     - "1880"
-  middle: "QZA"
+  middle: "QZR"
   suffix: "alpha"
+arc:
+  serial: "1880QZRZTRS61"
+  mac1: "0011329498A5"
+  mac2: "0011329498A6"
+  mac3: "0011329498A7"
+  mac4: "0011329498A8"
 dom: 2
 dt: false
 disks: 8

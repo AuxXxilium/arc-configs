@@ -24,9 +24,15 @@ platform: "denverton"
 unique: "synology_denverton_1819+"
 serial:
   prefix:
-    - "2110"
-  middle: "SKR"
+    - "2050"
+  middle: "R5R"
   suffix: "alpha"
+arc:
+  serial: "2050R5RH8TVAH"
+  mac1: "001132CF8873"
+  mac2: "001132CF8874"
+  mac3: "001132CF8875"
+  mac4: "001132CF8876"
 dom: 2
 dt: false
 disks: 8

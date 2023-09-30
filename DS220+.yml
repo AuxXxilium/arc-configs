@@ -25,9 +25,13 @@ platform: "geminilake"
 unique: "synology_geminilake_220+"
 serial:
   prefix:
-    - "0000"
-  middle: "XXX"
+    - "2230"
+  middle: "RLR"
   suffix: "alpha"
+arc:
+  serial: "2230RLRS7506M"
+  mac1: "9009D019FC01"
+  mac2: "9009D019FC02"
 dom: 2
 dt: true
 disks: 2
