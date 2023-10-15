@@ -1,4 +1,4 @@
-id: "DS1621xs+"
+id: "RS4021xs+"
 synoinfo: &synoinfo
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
@@ -22,19 +22,22 @@ patch: &patch
   - "ramdisk-disable-root-pwd-*.patch"
   - "ramdisk-disable-disabled-ports-*.patch"
 platform: "broadwellnk"
-unique: "synology_broadwellnk_1621xs+"
+unique: "synology_broadwellnk_rs4021xs+"
 serial:
   prefix:
-    - "2070"
-  middle: "RVR"
+    - "2310"
+  middle: "ULR"
   suffix: "alpha"
 arc:
-  serial: "2070RVR2JPQTF"
-  mac1: "001132D64C73"
-  mac2: "001132D64C74"
-  mac3: "001132D64C75"
+  serial: "2310ULRTC2EAG"
+  mac1: "9009D03BAE85"
+  mac2: "9009D03BAE86"
+  mac3: "9009D03BAE87"
+  mac4: "9009D03BAE88"
+  mac5: "9009D03BAE89"
+  mac6: "9009D03BAE8A"
 dom: 2
-disks: 6
+disks: 16
 dt: false
 beta: false
 productvers:
