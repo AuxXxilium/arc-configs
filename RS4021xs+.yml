@@ -26,6 +26,7 @@ unique: "synology_broadwellnk_rs4021xs+"
 serial:
   prefix:
     - "2160"
+    - "2310"
   middle: "T2R"
   suffix: "alpha"
 arc:
