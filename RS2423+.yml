@@ -5,9 +5,6 @@ synoinfo: &synoinfo
   support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
   support_oob_ctl: "no"
-  support_leds_atmega1608: "no"
-  support_leds_lp3943: "no"
-  supportadt7490: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
   maxlanport: "8"
