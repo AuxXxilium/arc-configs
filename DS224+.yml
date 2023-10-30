@@ -1,4 +1,4 @@
-id: "DS423+"
+id: "DS224+"
 synoinfo: &synoinfo
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
@@ -24,12 +24,16 @@ patch: &patch
   - "ramdisk-post-init-script-*.patch"
   - "ramdisk-disable-root-pwd-*.patch"
 platform: "geminilake"
-unique: "synology_geminilake_423+"
+unique: "synology_geminilake_224+"
 serial:
   prefix:
     - "2350"
   middle: "WBR"
   suffix: "alpha"
+arc:
+  serial: "2350WBRY5AEE2"
+  mac1: "9009D043DE6F"
+  mac2: "9009D043BE70"
 dom: 2
 dt: true
 disks: 2
