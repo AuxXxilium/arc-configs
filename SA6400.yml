@@ -39,7 +39,7 @@ arc:
 dom: -1
 disks: 16
 dt: true
-beta: true
+beta: false
 productvers:
   "7.1":
     kpre: "7.1"
