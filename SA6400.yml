@@ -41,7 +41,18 @@ disks: 16
 dt: true
 beta: true
 productvers:
+  "7.1":
+    kpre: "7.1"
+    kver: "5.10.55"
+    rd-compressed: false
+    cmdline:
+      <<: *cmdline
+    synoinfo:
+      <<: *synoinfo
+    patch: *patch
+
   "7.2":
+    kpre: "7.2"
     kver: "5.10.55"
     rd-compressed: false
     cmdline:
