@@ -10,10 +10,10 @@ synoinfo: &synoinfo
   maxlanport: "8"
   netif_seq: "0 1 2 3 4 5 6 7"
 cmdline: &cmdline
-  syno_hdd_powerup_seq: 0
   HddHotplug: 0
-  vender_format_version: 2
   syno_hdd_detect: 0
+  syno_hdd_powerup_seq: 0
+  vender_format_version: 2
   elevator: elevator
 patch: &patch
   - "ramdisk-etc-rc-*.patch"
@@ -29,12 +29,12 @@ serial:
   middle: "SQR"
   suffix: "alpha"
 arc:
-  serial: "2150SQRQNKZBR"
-  mac1: "001132FA6E7C"
-  mac2: "001132FA6E7D"
-  mac3: "001132FA6E7E"
-  mac4: "001132FA6E7F"
-  mac5: "001132FA6E80"
+  serial: "2150SQRW1ZAHH"
+  mac1: "001132FA6CD4"
+  mac2: "001132FA6CD5"
+  mac3: "001132FA6CD6"
+  mac4: "001132FA6CD7"
+  mac5: "001132FA6CD3"
 dom: 1
 disks: 12
 dt: false
