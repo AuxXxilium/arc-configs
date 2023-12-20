@@ -1,8 +1,5 @@
 # Configs for Arc Redpill Loader
 
-## List of all Modules
-https://github.com/AuxXxilium/AuxXxilium/wiki/Arc:-Modules
-
 ### Links
 
 - <a href="https://github.com/AuxXxilium">Overview</a>
