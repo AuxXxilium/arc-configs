@@ -31,8 +31,12 @@ serial:
     - "2040"
     - "20C0"
     - "2150"
+    - "2280"
   middle: "UBR"
   suffix: "alpha"
+arc:
+  serial: "2280UBRCC3K22"
+  mac1: "9009D02AE034"
 dom: 2
 dt: true
 disks: 2
