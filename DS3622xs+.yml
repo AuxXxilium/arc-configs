@@ -15,6 +15,7 @@ cmdline: &cmdline
   vender_format_version: 2
   syno_hdd_detect: 0
   elevator: elevator
+  modprobe.blacklist: scsi_transport_sas
 patch: &patch
   - "ramdisk-etc-rc-*.patch"
   - "ramdisk-init-script-v4-*.patch"
