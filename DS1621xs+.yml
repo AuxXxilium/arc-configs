@@ -1,5 +1,6 @@
 id: "DS1621xs+"
 synoinfo: &synoinfo
+  support_uasp: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
   support_bde_internal_10g: "no"
