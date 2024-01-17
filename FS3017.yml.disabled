@@ -1,5 +1,6 @@
 id: "FS3017"
 synoinfo: &synoinfo
+  support_uasp: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
   support_bde_internal_10g: "no"

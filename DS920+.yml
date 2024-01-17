@@ -1,5 +1,6 @@
 id: "DS920+"
 synoinfo: &synoinfo
+  support_uasp: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
   support_bde_internal_10g: "no"
@@ -34,9 +35,9 @@ serial:
   middle: "SBR"
   suffix: "alpha"
 arc:
-  serial: "2050SBR8RK93S"
-  mac1: "001132CD9427"
-  mac2: "001132CD9428"
+  serial: "2120SBRRHTSXV"
+  mac1: "001132ECECC7"
+  mac2: "001132ECECC8"
 dom: 2
 disks: 4
 dt: true
