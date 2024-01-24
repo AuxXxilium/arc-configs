@@ -38,6 +38,9 @@ arc:
   serial: "1890PDN993218"
   mac1: "0011329A73BB"
   mac2: "0011329A73BC"
+flags:
+  - "movbe"
+  - "fma3"
 dom: 2
 disks: 4
 dt: false

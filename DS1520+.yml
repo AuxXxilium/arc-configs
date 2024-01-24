@@ -37,6 +37,9 @@ arc:
   mac2: "001132D41386"
   mac3: "001132D41387"
   mac4: "001132D41388"
+flags:
+  - "movbe"
+  - "fma3"
 dom: 2
 disks: 6
 dt: true

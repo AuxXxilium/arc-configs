@@ -35,6 +35,9 @@ arc:
   serial: "2350WBRY5AEE2"
   mac1: "9009D043DE6F"
   mac2: "9009D043BE70"
+flags:
+  - "movbe"
+  - "fma3"
 dom: 2
 dt: true
 disks: 2
