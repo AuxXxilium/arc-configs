@@ -35,6 +35,9 @@ arc:
   serial: "1880QXRTXWRXT"
   mac1: "00113295B399"
   mac2: "00113295B39A"
+flags:
+  - "movbe"
+  - "fma3"
 dom: 2
 disks: 5
 dt: false

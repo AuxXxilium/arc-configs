@@ -33,6 +33,7 @@ serial:
   suffix: "numeric"
 flags:
   - "movbe"
+  - "fma3"
 dom: 2
 dt: false
 disks: 2

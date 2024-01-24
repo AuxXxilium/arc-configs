@@ -31,6 +31,9 @@ serial:
     - "22A0"
   middle: "VKR"
   suffix: "alpha"
+flags:
+  - "movbe"
+  - "fma3"
 dom: 2
 dt: true
 disks: 4

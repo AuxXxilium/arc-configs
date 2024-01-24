@@ -38,6 +38,9 @@ arc:
   serial: "2120SBRRHTSXV"
   mac1: "001132ECECC7"
   mac2: "001132ECECC8"
+flags:
+  - "movbe"
+  - "fma3"
 dom: 2
 disks: 4
 dt: true

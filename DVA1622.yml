@@ -38,6 +38,9 @@ serial:
 arc:
   serial: "2280UBRCC3K22"
   mac1: "9009D02AE034"
+flags:
+  - "movbe"
+  - "fma3"
 dom: 2
 dt: true
 disks: 2
