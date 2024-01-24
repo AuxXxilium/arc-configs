@@ -31,6 +31,10 @@ serial:
     - "22A0"
   middle: "VKR"
   suffix: "alpha"
+arc:
+  serial: "2330VKR3C2YMA"
+  mac1: "9009D0401831"
+  mac2: "9009D0401831"
 flags:
   - "movbe"
   - "fma3"
