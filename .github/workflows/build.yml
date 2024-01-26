@@ -60,7 +60,7 @@ jobs:
           zip -9 configs.zip -j *.yml VERSION
 
       - name: Upload to Artifacts
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: configs
           path: |
