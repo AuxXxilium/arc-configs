@@ -37,7 +37,7 @@ arc:
   mac4: "9009D03BAE88"
   mac5: "9009D03BAE89"
   mac6: "9009D03BAE8A"
-dom: 2
+dom: 1
 disks: 16
 dt: false
 beta: false
