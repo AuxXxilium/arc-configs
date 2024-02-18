@@ -11,10 +11,10 @@ synoinfo: &synoinfo
   maxlanport: "8"
   netif_seq: "0 1 2 3 4 5 6 7"
 cmdline: &cmdline
-  HddHotplug: 0
-  syno_hdd_detect: 0
   syno_hdd_powerup_seq: 0
+  HddHotplug: 0
   vender_format_version: 2
+  syno_hdd_detect: 0
   elevator: elevator
 patch: &patch
   - "ramdisk-etc-rc-*.patch"
@@ -38,7 +38,7 @@ arc:
   mac4: "001132FE1AA4"
   mac5: "001132FE1AA5"
   mac6: "001132FE1AA6"
-dom: 1
+dom: 2
 disks: 16
 dt: false
 beta: false
