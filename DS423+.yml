@@ -34,9 +34,6 @@ arc:
   serial: "2330VKR3C2YMA"
   mac1: "9009D0401831"
   mac2: "9009D0401831"
-flags:
-  - "movbe"
-  - "fma3"
 dom: 2
 dt: true
 disks: 4

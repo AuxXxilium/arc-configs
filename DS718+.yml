@@ -29,6 +29,8 @@ serial:
     - "1930"
   middle: "PEN"
   suffix: "numeric"
+flags:
+  - "movbe"
 dom: 2
 dt: false
 disks: 2

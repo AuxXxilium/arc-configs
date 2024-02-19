@@ -32,9 +32,6 @@ arc:
   serial: "2010QWRV05AEE"
   mac1: "001132C4BD0E"
   mac2: "001132C4BD0F"
-flags:
-  - "movbe"
-  - "fma3"
 dom: 2
 dt: true
 disks: 2
