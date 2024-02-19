@@ -1,19 +1,23 @@
 id: "SA3600"
 synoinfo: &synoinfo
+  supportext4: "yes"
   support_uasp: "yes"
+  support_printer: "yes"
+  support_usb_printer: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
   support_led_brightness_adjustment: "no"
   support_bde_internal_10g: "no"
-  support_oob_ctl: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
+  supportsas: "no"
   maxlanport: "8"
   netif_seq: "0 1 2 3 4 5 6 7"
 cmdline: &cmdline
   HddHotplug: 0
   syno_hdd_detect: 0
   syno_hdd_powerup_seq: 0
+  SMBusHddDynamicPower: 1
   vender_format_version: 2
   elevator: elevator
 patch: &patch

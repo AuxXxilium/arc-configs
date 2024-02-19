@@ -1,11 +1,13 @@
 id: "RS3621xs+"
 synoinfo: &synoinfo
+  supportext4: "yes"
   support_uasp: "yes"
+  support_printer: "yes"
+  support_usb_printer: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
-  support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
-  support_oob_ctl: "no"
+  support_bde_internal_10g: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
   maxlanport: "8"
@@ -40,7 +42,7 @@ arc:
 dom: 1
 disks: 12
 dt: false
-beta: false
+beta: true
 productvers:
   "7.1":
     kver: "4.4.180"

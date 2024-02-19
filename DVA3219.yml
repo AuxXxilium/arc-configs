@@ -3,9 +3,8 @@ synoinfo: &synoinfo
   support_uasp: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
-  support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
-  support_oob_ctl: "no"
+  support_bde_internal_10g: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
   maxlanport: "8"
@@ -36,6 +35,8 @@ arc:
   mac2: "001132A9EA9B"
   mac3: "001132A9EA9C"
   mac4: "001132A9EA9D"
+flags:
+  - "movbe"
 dom: 2
 disks: 4
 dt: false

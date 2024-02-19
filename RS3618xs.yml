@@ -1,12 +1,13 @@
 id: "RS3618xs"
 synoinfo: &synoinfo
+  supportext4: "yes"
   support_uasp: "yes"
+  support_printer: "yes"
+  support_usb_printer: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
-  support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
   supportssdcache: "no"
-  support_oob_ctl: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
   maxlanport: "8"
@@ -27,16 +28,13 @@ platform: "broadwell"
 unique: "synology_broadwell_rs3618xs"
 serial:
   prefix:
-    - "1130"
-    - "1230"
-    - "1330"
     - "1430"
   middle: "ODN"
   suffix: "alpha"
 dom: 2
 dt: false
 disks: 12
-beta: false
+beta: true
 productvers:
   "7.1":
     kver: "4.4.180"

@@ -1,11 +1,11 @@
 id: "DS224+"
 synoinfo: &synoinfo
   support_uasp: "yes"
+  support_printer: "yes"
+  support_usb_printer: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
-  support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
-  support_oob_ctl: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
   maxlanport: "8"
@@ -35,9 +35,6 @@ arc:
   serial: "2350WBRY5AEE2"
   mac1: "9009D043DE6F"
   mac2: "9009D043BE70"
-flags:
-  - "movbe"
-  - "fma3"
 dom: 2
 dt: true
 disks: 2
