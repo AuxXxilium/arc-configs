@@ -3,9 +3,7 @@ synoinfo: &synoinfo
   support_uasp: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
-  support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
-  support_oob_ctl: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
   maxlanport: "8"
@@ -13,7 +11,6 @@ synoinfo: &synoinfo
   buzzeroffen: "0xffff"
 cmdline: &cmdline
   intel_iommu: "igfx_off"
-  synoboot2:
   HddEnableDynamicPower: 1
   vender_format_version: 2
   syno_ttyS0: "serial,0x3f8"
@@ -38,9 +35,6 @@ arc:
   serial: "2120SBRRHTSXV"
   mac1: "001132ECECC7"
   mac2: "001132ECECC8"
-flags:
-  - "movbe"
-  - "fma3"
 dom: 2
 disks: 4
 dt: true

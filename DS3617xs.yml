@@ -1,11 +1,11 @@
 id: "DS3617xs"
 synoinfo: &synoinfo
   support_uasp: "yes"
+  support_printer: "yes"
+  support_usb_printer: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
-  support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
-  support_oob_ctl: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
   maxlanport: "8"

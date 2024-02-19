@@ -1,28 +1,27 @@
 id: "FS6400"
 synoinfo: &synoinfo
+  supportext4: "yes"
   support_uasp: "yes"
+  support_printer: "yes"
+  support_usb_printer: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
-  support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
-  support_leds_lp3943: "no"
-  supportadt7490: "no"
-  support_oob_ctl: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
   supportsas: "no"
-  supportsas_v2: "yes"
+  supportsas_v2_r1: "no"
+  support_multipath: "yes"
   maxlanport: "8"
   netif_seq: "0 1 2 3 4 5 6 7"
   buzzeroffen: "0xffff"
 cmdline: &cmdline
-  synoboot2:
+  SASmodel: 1
   SMBusHddDynamicPower: 1
   vender_format_version: 2
   syno_ttyS0: "serial,0x3f8"
   syno_ttyS1: "serial,0x2f8"
   elevator: elevator
-  modprobe.blacklist: mpt3sas
 patch: &patch
   - "ramdisk-etc-rc-*.patch"
   - "ramdisk-init-script-v4-*.patch"
@@ -35,10 +34,10 @@ serial:
     - "1960"
   middle: "PSN"
   suffix: "numeric"
-dom: 2
+dom: 1
 dt: true
 disks: 24
-beta: true
+beta: false
 productvers:
   "7.1":
     kver: "4.4.180"

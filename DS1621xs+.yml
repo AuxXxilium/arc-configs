@@ -1,10 +1,12 @@
 id: "DS1621xs+"
 synoinfo: &synoinfo
   support_uasp: "yes"
+  support_printer: "yes"
+  support_usb_printer: "yes"
   support_disk_compatibility: "no"
   support_memory_compatibility: "no"
-  support_bde_internal_10g: "no"
   support_led_brightness_adjustment: "no"
+  support_bde_internal_10g: "no"
   support_oob_ctl: "no"
   support_syno_hybrid_raid:
   supportraidgroup:
@@ -34,7 +36,7 @@ arc:
   mac1: "001132D64C73"
   mac2: "001132D64C74"
   mac3: "001132D64C75"
-dom: 2
+dom: 1
 disks: 6
 dt: false
 beta: false
