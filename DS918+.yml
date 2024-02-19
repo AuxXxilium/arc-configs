@@ -42,8 +42,6 @@ dom: 2
 disks: 4
 dt: false
 beta: false
-flags:
-  - "movbe"
 productvers:
   "7.1":
     kver: "4.4.180"
