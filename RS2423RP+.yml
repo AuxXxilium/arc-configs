@@ -1,4 +1,4 @@
-id: "RS2423RP+"
+id: "RS2423rp+"
 synoinfo: &synoinfo
   supportext4: "yes"
   support_uasp: "yes"
@@ -34,8 +34,8 @@ serial:
   middle: "XXX"
   suffix: "alpha"
 dom: 2
-dt: true
 disks: 24
+dt: true
 beta: true
 productvers:
   "7.1":
