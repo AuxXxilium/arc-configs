@@ -29,6 +29,7 @@ serial:
     - "2270"
   middle: "TQR"
   suffix: "alpha"
+  macpre: 9009d0
 arc:
   serial: "2230TPR0VX7T2"
   mac1: "9009D01D104B"

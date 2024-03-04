@@ -32,6 +32,7 @@ dom: 1
 serial:
   prefix:
     - "1920"
+    - "1970"
   middle: "RJR"
   suffix: "alpha"
 arc:

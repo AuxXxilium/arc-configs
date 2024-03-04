@@ -30,6 +30,7 @@ serial:
     - "2350"
   middle: "WBR"
   suffix: "alpha"
+  macpre: 9009d0
 arc:
   serial: "2350WBRY5AEE2"
   mac1: "9009D043DE6F"

@@ -28,8 +28,10 @@ unique: "synology_geminilake_423+"
 serial:
   prefix:
     - "22A0"
+    - "2330"
   middle: "VKR"
   suffix: "alpha"
+  macpre: 9009d0
 arc:
   serial: "2330VKR3C2YMA"
   mac1: "9009D0401831"
