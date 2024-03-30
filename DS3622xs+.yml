@@ -19,7 +19,6 @@ cmdline: &cmdline
   syno_hdd_detect: 0
   syno_hdd_powerup_seq: 0
   vender_format_version: 2
-  elevator: elevator
 patch: &patch
   - "ramdisk-etc-rc-*.patch"
   - "ramdisk-init-script-v4-*.patch"
