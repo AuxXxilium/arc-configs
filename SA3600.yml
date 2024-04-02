@@ -36,6 +36,14 @@ serial:
     - "2150"
   middle: "SQR"
   suffix: "alpha"
+arc:
+  serial: "2150RSRV21ERQ"
+  mac1: "001132F7FE83"
+  mac2: "001132F7FE84"
+  mac3: "001132F7FE85"
+  mac4: "001132F7FE86"
+  mac5: "001132F7FE87"
+  mac6: "001132F7FE88"
 dom: 1
 dt: false
 disks: 12

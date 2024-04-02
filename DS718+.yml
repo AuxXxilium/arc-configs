@@ -30,6 +30,10 @@ serial:
     - "1930"
   middle: "PEN"
   suffix: "numeric"
+arc:
+  serial: "1880PEN265504"
+  mac1: "00113299AEB7"
+  mac2: "00113299AEB8"
 flags:
   - "movbe"
 dom: 2

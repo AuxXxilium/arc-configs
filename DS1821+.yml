@@ -26,6 +26,12 @@ serial:
     - "2120"
   middle: "SKR"
   suffix: "alpha"
+arc:
+  serial: "2230SKRAKFX2H"
+  mac1: "9009D01C8627"
+  mac2: "9009D01C8628"
+  mac3: "9009D01C8629"
+  mac4: "9009D01C862A"
 dom: 2
 dt: true
 disks: 8

@@ -32,6 +32,12 @@ serial:
     - "1430"
   middle: "ODN"
   suffix: "alpha"
+arc:
+  serial: "2320QNR5E9Q7Q"
+  mac1: "9009D03C28CD"
+  mac2: "9009D03C28CD"
+  mac3: "9009D03C28CD"
+  mac4: "9009D03C28CD"
 dom: 2
 dt: false
 disks: 12
