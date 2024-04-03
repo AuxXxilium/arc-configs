@@ -60,19 +60,21 @@ jobs:
           zip -9 configs.zip -j *.yml VERSION
 
       - name: Upload to Artifacts
-        uses: actions/upload-artifact@v3
+        if: success() && env.VERSION == ''
+        uses: actions/upload-artifact@v4
         with:
           name: configs
           path: |
             configs.zip
 
       - name: Release
-        uses: softprops/action-gh-release@v1
-        if: env.VERSION != ''
+        if: success() && env.VERSION != ''
+        uses: ncipollo/release-action@v1
         with:
-          tag_name: ${{ env.VERSION }}
+          tag: ${{ env.VERSION }}
           prerelease: ${{ inputs.prerelease }}
+          allowUpdates: true
           body: |
             ${{ steps.Changelog.outputs.changelog }}
-          files: |
+          artifacts: |
             configs.zip
