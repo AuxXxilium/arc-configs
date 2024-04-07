@@ -35,7 +35,7 @@ arc:
   mac3: "001132D41387"
   mac4: "001132D41388"
 dom: 2
-disks: 6
+disks: 5
 dt: true
 beta: false
 productvers:
