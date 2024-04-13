@@ -1,0 +1,80 @@
+name: Build Configs
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "format %y.%-m.$i or auto"
+        required: false
+        type: string
+      prerelease:
+        description: "pre release"
+        default: false
+        type: boolean
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@main
+        with:
+          fetch-depth: 0
+
+      - name: Changelog
+        uses: Bullrich/generate-release-changelog@master
+        id: Changelog
+        env:
+          REPO: ${{ github.repository }}
+
+      - name: Init Env
+        run: |
+          git config --global user.email "info@auxxxilium.tech"
+          git config --global user.name "AuxXxilium"
+          sudo timedatectl set-timezone "Europe/Berlin" 
+
+      - name: Calculate version
+        run: |
+          # Calculate Version
+          VERSION=""
+          if [ -n "${{ inputs.version }}" ]; then
+            VERSION="${{ inputs.version }}"
+          else
+            LATEST_TAG="$(curl -skL "https://api.github.com/repos/${{ github.repository }}/releases/latest" | jq -r ".tag_name" 2>/dev/null)"
+            if [[ -n "${LATEST_TAG}" && "`echo ${LATEST_TAG} | cut -d '.' -f 1,2`" = "`date +'%y.%-m.%-d'`" ]]; then  # format %y.%-m.$i
+              VERSION="`echo ${LATEST_TAG} | awk -F '.' '{$3=$3+1}1' OFS='.'`"
+            else
+              VERSION="`date +'%y.%-m.%-d'`"
+            fi
+          fi
+
+          if [ -n "${VERSION}" ]; then
+            # Modify Source File
+            echo "Version: ${VERSION}"
+            echo "${VERSION}" >VERSION
+            echo "VERSION=${VERSION}" >> $GITHUB_ENV
+          fi
+
+      - name: Build Configs Package
+        run: |
+          zip -9 configs.zip -j *.yml VERSION
+
+      - name: Upload to Artifacts
+        if: success() && env.VERSION == ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: configs
+          path: |
+            configs.zip
+
+      - name: Release
+        if: success() && env.VERSION != ''
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ env.VERSION }}
+          prerelease: ${{ inputs.prerelease }}
+          allowUpdates: true
+          body: |
+            ${{ steps.Changelog.outputs.changelog }}
+          artifacts: |
+            configs.zip
