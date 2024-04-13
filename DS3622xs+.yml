@@ -33,12 +33,12 @@ serial:
   middle: "SQR"
   suffix: "alpha"
 arc:
-  serial: "2150SQRQNKZBR"
-  mac1: "001132FA6E7C"
-  mac2: "001132FA6E7D"
-  mac3: "001132FA6E7E"
-  mac4: "001132FA6E7F"
-  mac5: "001132FA6E80"
+  serial: "21A0SQR192EY1"
+  mac1: "9009D00998FF"
+  mac2: "9009D0099900"
+  mac3: "9009D0099901"
+  mac4: "9009D0099902"
+  mac5: "9009D0099903"
 dom: 1
 disks: 12
 dt: false
