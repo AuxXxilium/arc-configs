@@ -17,10 +17,12 @@ jobs:
           git config --global user.name "AuxXxilium"
           sudo timedatectl set-timezone "Europe/Berlin" 
 
-      - name: Clean Old
-        uses: Nats-ji/delete-old-releases@v1
+      - name: Delete releases and workflows runs
+        uses: ophub/delete-releases-workflows@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          keep-count: 1
-          remove-tags: true
-          keep-old-minor-releases: false
+          delete_releases: true
+          releases_keep_latest: 1
+          delete_workflows: true
+          delete_tags: true
+          workflows_keep_day: 1
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
