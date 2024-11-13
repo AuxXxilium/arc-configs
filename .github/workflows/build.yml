@@ -39,7 +39,7 @@ jobs:
           if [ -n "${{ inputs.version }}" ]; then
             VERSION="${{ inputs.version }}"
           else
-            VERSION="`date +'%y.%m.%d'`.dev"
+            VERSION="`date +'%y.%m.%d'`"
           fi
 
           if [ -n "${VERSION}" ]; then
