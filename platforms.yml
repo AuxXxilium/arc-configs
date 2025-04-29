@@ -35,6 +35,11 @@ productvers5: &productvers5
     kpre: "7.2"
     kver: "5.10.55"
 
+productvers25: &productvers25
+  "7.2":
+    kpre: "7.2"
+    kver: "5.10.55"
+
 platforms:
   apollolake:
     dt: false
@@ -112,7 +117,7 @@ platforms:
     synoinfo:
       <<: *synoinfo
       netif_seq_by_dts: "no"
-    productvers: *productvers5
+    productvers: *productvers25
   epyc7002:
     dt: true
     synoinfo:
