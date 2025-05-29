@@ -81,14 +81,12 @@ platforms:
   denverton:
     dt: false
     flags: ["movbe"]
-    synoinfo:
-      <<: *synoinfo
+    synoinfo: *synoinfo
     productvers: *productvers4
   geminilake:
     dt: true
     noflags: ["x2apic"]
-    synoinfo:
-      <<: *synoinfo
+    synoinfo: *synoinfo
     productvers: *productvers4
   purley:
     dt: true
@@ -105,24 +103,37 @@ platforms:
     productvers: *productvers4
   r1000:
     dt: true
-    synoinfo:
-      <<: *synoinfo
+    synoinfo: *synoinfo
     productvers: *productvers4
   v1000:
     dt: true
+    synoinfo: *synoinfo
+    productvers: *productvers4
+  epyc7002:
+    dt: true
     synoinfo:
       <<: *synoinfo
-    productvers: *productvers4
-  v1000nk:
+      netif_seq_by_dts: "no"
+    productvers: *productvers5
+  geminilakenk:
+    dt: true
+    noflags: ["x2apic"]
+    synoinfo:
+      <<: *synoinfo
+      netif_seq_by_dts: "no"
+      show_autoupdatetype_notify: "yes"
+    productvers: *productvers5
+  r1000nk:
     dt: true
     synoinfo:
       <<: *synoinfo
       netif_seq_by_dts: "no"
       show_autoupdatetype_notify: "yes"
     productvers: *productvers5
-  epyc7002:
+  v1000nk:
     dt: true
     synoinfo:
       <<: *synoinfo
       netif_seq_by_dts: "no"
+      show_autoupdatetype_notify: "yes"
     productvers: *productvers5
