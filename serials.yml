@@ -140,6 +140,14 @@
   suffix: "alpha"
   macpre: "9009d0"
   ports: "4"
+"DS1825+":
+  prefix:
+    - "2540"
+  middle:
+    - "WDR"
+  suffix: "alpha"
+  macpre: "9009d0"
+  ports: "2"
 "DS2419+":
   prefix:
     - "1880"
