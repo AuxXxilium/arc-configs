@@ -238,7 +238,7 @@
   suffix: "alpha"
   macpre: 9009d0
   ports: 2
-"RS820rp+":
+"RS820RP+":
   prefix:
     - "1960"
   middle:
