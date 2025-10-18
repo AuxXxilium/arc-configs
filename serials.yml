@@ -29,6 +29,14 @@
   suffix: "alpha"
   macpre: 9009d0
   ports: 2
+"DS425+":
+  prefix:
+    - "2540"
+  middle:
+    - "YGR"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 2
 "DS718+":
   prefix:
     - "1880"
@@ -48,6 +56,14 @@
     - "2230"
   middle:
     - "TPR"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 2
+"DS725+":
+  prefix:
+    - "2540"
+  middle:
+    - "YKR"
   suffix: "alpha"
   macpre: 9009d0
   ports: 2
@@ -250,6 +266,13 @@
     - "20B0"
   middle:
     - "RWR"
+  suffix: "alpha"
+  ports: 4
+"RS1221RP+":
+  prefix:
+    - "22B0"
+  middle:
+    - "RXR"
   suffix: "alpha"
   ports: 4
 "RS1619xs+":
