@@ -233,10 +233,10 @@
   ports: 4
 "FS6400":
   prefix:
-    - "0000"
+    - "1960"
   middle:
-    - "XXX"
-  suffix: "alpha"
+    - "PSN"
+  suffix: "numeric"
   ports: 4
 "HD6500":
   prefix:
