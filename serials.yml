@@ -224,12 +224,20 @@
   suffix: "alpha"
   macpre: 9009d0
   ports: 4
+"FS1018":
+  prefix:
+    - "17B1"
+  middle:
+    - "PYN"
+  suffix: "numeric"
+  ports: 4
 "FS2500":
   prefix:
-    - "1960"
+    - "2070"
   middle:
-    - "PSN"
-  suffix: "numeric"
+    - "STR"
+  suffix: "alpha"
+  macpre: 9009d0
   ports: 4
 "FS6400":
   prefix:
