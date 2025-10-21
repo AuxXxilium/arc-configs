@@ -17,7 +17,6 @@ synoinfo: &synoinfo
   enableRCPower: "yes"
   support_fan: "no"
   support_fan_adjust_dual_mode: "no"
-  support_bde_internal_10g: "no"
   supportadt7490: "no"
   maxlanport: "8"
   netif_seq: ""
