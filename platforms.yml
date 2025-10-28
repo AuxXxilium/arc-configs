@@ -140,3 +140,6 @@ platforms:
       netif_seq_by_dts: "no"
       show_autoupdatetype_notify: "yes"
     productvers: *productvers5
+  geminilakemango:
+  r1000aem:
+  epyc7002aem:
