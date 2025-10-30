@@ -141,5 +141,23 @@ platforms:
       show_autoupdatetype_notify: "yes"
     productvers: *productvers5
   geminilakemango:
+    dt: true
+    noflags: ["x2apic"]
+    synoinfo:
+      <<: *synoinfo
+      netif_seq_by_dts: "no"
+      show_autoupdatetype_notify: "yes"
+    productvers: *productvers5
   r1000aem:
+    dt: true
+    synoinfo:
+      <<: *synoinfo
+      netif_seq_by_dts: "no"
+      show_autoupdatetype_notify: "yes"
+    productvers: *productvers5
   epyc7002aem:
+    dt: true
+    synoinfo:
+      <<: *synoinfo
+      netif_seq_by_dts: "no"
+    productvers: *productvers5
