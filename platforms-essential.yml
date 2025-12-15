@@ -26,6 +26,14 @@ productvers5: &productvers5
   "7.2":
     kpre: "7.2"
     kver: "5.10.55"
+
+productvers5n: &productvers5n
+  "7.1":
+    kpre: "7.1"
+    kver: "5.10.55"
+  "7.2":
+    kpre: "7.2"
+    kver: "5.10.55"
   "7.3":
     kpre: "7.3"
     kver: "5.10.55"
@@ -36,7 +44,7 @@ platforms:
     synoinfo:
       <<: *synoinfo
       netif_seq_by_dts: "no"
-    productvers: *productvers5
+    productvers: *productvers5n
   geminilakenk:
     dt: true
     noflags: ["x2apic"]
