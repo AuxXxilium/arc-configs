@@ -15,6 +15,9 @@ synoinfo: &synoinfo
   support_syno_hybrid_raid: "no"
   supportraidgroup: "no"
   enableRCPower: "yes"
+  support_fan: "no"
+  support_fan_adjust_dual_mode: "no"
+  supportadt7490: "no"
   maxlanport: "8"
   netif_seq: ""
   buzzeroffen: "0xffff"
@@ -29,15 +32,7 @@ productvers4: &productvers4
   "7.3":
     kver: "4.4.302"
 
-productvers5: &productvers5
-  "7.1":
-    kpre: "7.1"
-    kver: "5.10.55"
-  "7.2":
-    kpre: "7.2"
-    kver: "5.10.55"
-
-productvers5n: &productvers5n
+productvers5n: &productvers5
   "7.1":
     kpre: "7.1"
     kver: "5.10.55"
@@ -136,7 +131,7 @@ platforms:
     synoinfo:
       <<: *synoinfo
       netif_seq_by_dts: "no"
-    productvers: *productvers5n
+    productvers: *productvers5
   geminilakenk:
     dt: true
     ccnt: 8
