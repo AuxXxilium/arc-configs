@@ -262,11 +262,25 @@
   suffix: "alpha"
   macpre: 9009d0
   ports: 2
+"RS818+":
+  prefix:
+    - "18A0"
+  middle:
+    - "QBN"
+  suffix: "numeric"
+  ports: 4
 "RS820RP+":
   prefix:
     - "1960"
   middle:
     - "RAR"
+  suffix: "alpha"
+  ports: 4
+"RS1219+":
+  prefix: 
+    - "2090"
+  middle:
+    - "QQR"
   suffix: "alpha"
   ports: 4
 "RS1221+":
@@ -288,6 +302,13 @@
     - "1920"
   middle:
     - "QPR"
+  suffix: "alpha"
+  ports: 4
+"RS2418RP+":
+  prefix:
+    - "1820"
+  middle:
+    - "P9N"
   suffix: "alpha"
   ports: 4
 "RS2423RP+":
@@ -319,6 +340,13 @@
   middle:
     - "SZR"
   suffix: "alpha"
+  ports: 6
+"RS4017xs+":
+  prefix:
+    - "1870"
+  middle:
+    - "P2N"
+  suffix: "numeric"
   ports: 6
 "RS4021xs+":
   prefix:
