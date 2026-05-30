@@ -393,3 +393,11 @@
   suffix: "alpha"
   macpre: 9009d0
   ports: 7
+"PAS7700":
+  prefix:
+    - "2600"
+  middle:
+    - "XXX"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 7
