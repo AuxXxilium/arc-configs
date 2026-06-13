@@ -49,6 +49,15 @@ jobs:
             echo "VERSION=${VERSION}" >> $GITHUB_ENV
           fi
 
+      - name: Update data.yml
+        run: |
+          if curl -skL "https://raw.githubusercontent.com/AuxXxilium/arc-dsm/refs/heads/main/data.yml" -o "data.yml"; then
+            FILESIZE=$(stat -c%s "data.yml")
+            if [ "${FILESIZE}" -lt 3072 ]; then
+              rm -f "data.yml"
+            fi
+          fi
+
       - name: Build Configs Package
         run: |
           # Build Configs Package
