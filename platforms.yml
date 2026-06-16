@@ -30,6 +30,10 @@ productvers4-73: &productvers4-73
   "7.3":
     kpre: "7.3"
     kver: "4.4.302"
+productvers4-74: &productvers4-74
+  "7.4":
+    kpre: "7.4"
+    kver: "4.4.302"
 
 productvers5-72: &productvers5-72
   "7.2":
@@ -54,13 +58,13 @@ platforms:
       <<: *synoinfo
       HddEnableDynamicPower: "no"
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   broadwell:
     dt: false
     ccnt: "16"
     synoinfo: *synoinfo
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   broadwellnk:
     dt: false
     ccnt: "24"
@@ -69,7 +73,7 @@ platforms:
       support_bde_internal_10g: "no"
       supportsas: "no"
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   broadwellnkv2:
     dt: true
     ccnt: "24"
@@ -80,7 +84,7 @@ platforms:
       supportsas_v2_r1: "no"
       support_multipath: "yes"
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   broadwellntbap:
     dt: false
     ccnt: "24"
@@ -94,21 +98,21 @@ platforms:
       support_install_only_dev: "no"
       required_system_disk_number: "0"
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   denverton:
     dt: false
     ccnt: "16"
     flags: ["movbe"]
     synoinfo: *synoinfo
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   geminilake:
     dt: true
     ccnt: "8"
     noflags: ["x2apic"]
     synoinfo: *synoinfo
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   purley:
     dt: true
     ccnt: "64"
@@ -123,19 +127,19 @@ platforms:
       required_system_disk_number: "0"
       internal_disk_without_led_mask: "no"
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   r1000:
     dt: true
     ccnt: "16"
     synoinfo: *synoinfo
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   v1000:
     dt: true
     ccnt: "16"
     synoinfo: *synoinfo
     productvers:
-      <<: [*productvers4-72, *productvers4-73]
+      <<: [*productvers4-72, *productvers4-73, *productvers4-74]
   epyc7002:
     dt: true
     ccnt: "24"
@@ -143,7 +147,7 @@ platforms:
       <<: *synoinfo
       netif_seq_by_dts: "no"
     productvers:
-      <<: [*productvers5-72, *productvers5-73]
+      <<: [*productvers5-72, *productvers5-73, *productvers5-74]
   epyc7003ntb:
     dt: true
     ccnt: "24"
@@ -162,7 +166,7 @@ platforms:
       netif_seq_by_dts: "no"
       show_autoupdatetype_notify: "yes"
     productvers:
-      <<: [*productvers5-72, *productvers5-73]
+      <<: [*productvers5-72, *productvers5-73, *productvers5-74]
   r1000nk:
     dt: true
     ccnt: "16"
@@ -171,7 +175,7 @@ platforms:
       netif_seq_by_dts: "no"
       show_autoupdatetype_notify: "yes"
     productvers:
-      <<: [*productvers5-72, *productvers5-73]
+      <<: [*productvers5-72, *productvers5-73, *productvers5-74]
   v1000nk:
     dt: true
     ccnt: "16"
@@ -180,4 +184,4 @@ platforms:
       netif_seq_by_dts: "no"
       show_autoupdatetype_notify: "yes"
     productvers:
-      <<: [*productvers5-72, *productvers5-73]
+      <<: [*productvers5-72, *productvers5-73, *productvers5-74]

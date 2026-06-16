@@ -43,7 +43,7 @@ platforms:
       <<: *synoinfo
       netif_seq_by_dts: "no"
     productvers:
-      <<: [*productvers5-72, *productvers5-73]
+      <<: [*productvers5-72, *productvers5-73, *productvers5-74]
   epyc7003ntb:
     dt: true
     ccnt: "24"
@@ -62,7 +62,7 @@ platforms:
       netif_seq_by_dts: "no"
       show_autoupdatetype_notify: "yes"
     productvers:
-      <<: [*productvers5-72, *productvers5-73]
+      <<: [*productvers5-72, *productvers5-73, *productvers5-74]
   r1000nk:
     dt: true
     ccnt: "16"
@@ -71,7 +71,7 @@ platforms:
       netif_seq_by_dts: "no"
       show_autoupdatetype_notify: "yes"
     productvers:
-      <<: [*productvers5-72, *productvers5-73]
+      <<: [*productvers5-72, *productvers5-73, *productvers5-74]
   v1000nk:
     dt: true
     ccnt: "16"
@@ -80,4 +80,4 @@ platforms:
       netif_seq_by_dts: "no"
       show_autoupdatetype_notify: "yes"
     productvers:
-      <<: [*productvers5-72, *productvers5-73]
+      <<: [*productvers5-72, *productvers5-73, *productvers5-74]
