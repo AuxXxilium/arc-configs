@@ -51,7 +51,7 @@ jobs:
 
       - name: Update data.yml
         run: |
-          if curl -skL "https://raw.githubusercontent.com/AuxXxilium/arc-dsm/refs/heads/main/data.yml" -o "data.yml"; then
+          if curl -skL "https://raw.githubusercontent.com/AuxXxilium/arc-dsm/refs/heads/new/data.yml" -o "data.yml"; then
             FILESIZE=$(stat -c%s "data.yml")
             if [ "${FILESIZE}" -lt 3072 ]; then
               rm -f "data.yml"
