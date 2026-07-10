@@ -148,15 +148,31 @@ platforms:
       netif_seq_by_dts: "no"
     productvers:
       <<: [*productvers5-72, *productvers5-73, *productvers5-74]
-  #epyc7003ntb:
-  #  dt: true
-  #  ccnt: "24"
-  #  synoinfo:
-  #    <<: *synoinfo
-  #    support_sed: "no"
-  #    netif_seq_by_dts: "no"
-  #  productvers:
-  #    <<: [*productvers5-74]
+  epyc7003:
+    dt: true
+    ccnt: "16"
+    synoinfo:
+      <<: *synoinfo
+      netif_seq_by_dts: "no"
+    productvers:
+      <<: [*productvers5-74]
+  epyc7003ntb:
+    dt: true
+    ccnt: "48"
+    synoinfo:
+      <<: *synoinfo
+      support_sed: "no"
+      netif_seq_by_dts: "no"
+    productvers:
+      <<: [*productvers5-74]
+  icelaked:
+    dt: true
+    ccnt: "16"
+    synoinfo:
+      <<: *synoinfo
+      netif_seq_by_dts: "no"
+    productvers:
+      <<: [*productvers5-74]
   geminilakenk:
     dt: true
     ccnt: "8"

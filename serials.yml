@@ -246,6 +246,14 @@
     - "PSN"
   suffix: "numeric"
   ports: 4
+"FS6420":
+  prefix:
+    - "2600"
+  middle:
+    - "XXX"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 3
 "HD6500":
   prefix:
     - "21C0"
@@ -304,6 +312,14 @@
     - "QPR"
   suffix: "alpha"
   ports: 4
+"RS1626xs+":
+  prefix:
+    - "2600"
+  middle:
+    - "XXX"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 3
 "RS2418RP+":
   prefix:
     - "1820"
@@ -341,6 +357,14 @@
     - "SZR"
   suffix: "alpha"
   ports: 6
+"RS3626xs":
+  prefix:
+    - "2600"
+  middle:
+    - "XXX"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 3
 "RS4017xs+":
   prefix:
     - "1870"
@@ -356,6 +380,22 @@
   suffix: "alpha"
   macpre: 9009d0
   ports: 6
+"RS4826xs+":
+  prefix:
+    - "2600"
+  middle:
+    - "XXX"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 3
+"RS6426xs+":
+  prefix:
+    - "2600"
+  middle:
+    - "XXX"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 3
 "SA3200d":
   prefix:
     - "19A0"
