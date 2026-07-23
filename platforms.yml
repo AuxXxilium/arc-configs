@@ -4,7 +4,7 @@ synoinfo: &synoinfo
   support_printer: "yes"
   support_usb_printer: "yes"
   support_nvidia_gpu: "yes"
-  support_disk_compatibility: "yes"
+  support_disk_compatibility: "no"
   support_synodrive_ability: "no"
   support_memory_compatibility: "no"
   support_memory_limitation: "no"
