@@ -153,12 +153,16 @@ platforms:
     ccnt: "16"
     synoinfo:
       <<: *synoinfo
-      netif_seq_by_dts: "no"
+      supportsas: "no"
+      supportsas_v2: "no"
+      no_disk_system: "no"
+      support_install_only_dev: "no"
+      required_system_disk_number: "0"
     productvers:
       <<: [*productvers5-74]
   epyc7003ntb:
     dt: true
-    ccnt: "48"
+    ccnt: "24"
     synoinfo:
       <<: *synoinfo
       support_sed: "no"
