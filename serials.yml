@@ -97,6 +97,14 @@
   suffix: "alpha"
   macpre: 9009d0
   ports: 2
+"DS925neo+":
+  prefix:
+    - "2620"
+  middle:
+    - "XXX"
+  suffix: "alpha"
+  macpre: 9009d0
+  ports: 2
 "DS1019+":
   prefix:
     - "1880"
