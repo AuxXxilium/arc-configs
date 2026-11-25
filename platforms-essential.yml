@@ -63,6 +63,8 @@ platforms:
       <<: *synoinfo
       support_sed: "no"
       netif_seq_by_dts: "no"
+      support_dual_pool: "no"
+      partition_curr_version: "9"
     productvers:
       <<: [*productvers5-74]
   icelaked:
