@@ -445,7 +445,11 @@
   prefix:
     - "2600"
   middle:
-    - "XXX"
+    - "R6R"
+    - "S4R"
+    - "WAR"
+    - "WJR"
+    - "Y8R"
   suffix: "alpha"
   macpre: 9009d0
   ports: 4
