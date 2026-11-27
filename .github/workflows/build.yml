@@ -51,11 +51,21 @@ jobs:
 
       - name: Update data.yml
         run: |
-          if curl -skL "https://raw.githubusercontent.com/AuxXxilium/arc-dsm/refs/heads/new/data.yml" -o "data.yml"; then
-            FILESIZE=$(stat -c%s "data.yml")
-            if [ "${FILESIZE}" -lt 3072 ]; then
-              rm -f "data.yml"
-            fi
+          # With its certificate checked, and it has to be there: Arc checks the
+          # DSM boot files it downloads against the zimage/ramdisk sums in this
+          # file and refuses them without, so a release without it, or with a
+          # data.yml from before arc-dsm listed them, would stop every build
+          # that has to fetch them. Run arc-dsm's "Rebuild Data" first then.
+          curl -fsSL --proto '=https' "https://raw.githubusercontent.com/AuxXxilium/arc-dsm/refs/heads/new/data.yml" -o "data.yml" \
+            || { echo "::error::data.yml could not be fetched from arc-dsm"; exit 1; }
+          FILESIZE=$(stat -c%s "data.yml")
+          if [ "${FILESIZE}" -lt 3072 ]; then
+            echo "::error::data.yml from arc-dsm is only ${FILESIZE} bytes"
+            exit 1
+          fi
+          if ! grep -q '^      zimage: "[0-9a-f]\{64\}"' data.yml || ! grep -q '^      ramdisk: "[0-9a-f]\{64\}"' data.yml; then
+            echo "::error::data.yml from arc-dsm lists no zimage/ramdisk SHA-256 yet - run arc-dsm's Rebuild Data first"
+            exit 1
           fi
 
       - name: Build Configs Package
